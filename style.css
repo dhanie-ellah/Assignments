@@ -1,0 +1,162 @@
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "lexend deca";
+}
+
+h1{
+    font-family: "big shoulders display";
+    color: white;
+    font-weight: 700;
+}
+
+p{
+    color: var(--transparent-white);
+}
+
+body{
+    height: 100vh;
+    background-color: var(--very-light-gray);
+}
+
+main{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    width: 60%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sedans{
+    background-color: var(--bright-orange);
+    padding: 35px;
+}
+
+.sedans img{
+    margin-bottom: 35px;
+}
+
+.sedans h1{
+    margin-bottom: 25px;
+    font-size: 35px;
+}
+
+.sedans p{
+    margin-bottom: 75px;
+    font-size: 15px;
+}
+
+.sedans button{
+    background-color: white;
+    border: 2px solid transparent;
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: var(--bright-orange);
+}
+
+.sedans button:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.suv{
+    background-color: var(--dark-cyan);
+    padding: 35px;
+}
+
+.suv img{
+    margin-bottom: 35px;
+}
+
+.suv h1{
+    margin-bottom: 25px;
+    font-size: 35px;
+}
+
+.suv p{
+    margin-bottom: 75px;
+    font-size: 15px;
+}
+
+.suv button{
+    background-color: white;
+    border: 2px solid transparent;
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: var(--dark-cyan);
+}
+
+.suv button:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.luxury{
+    background-color: var(--very-dark-cyan);
+    padding: 35px;
+}
+
+.luxury img{
+    margin-bottom: 35px;
+}
+
+.luxury h1{
+    margin-bottom: 25px;
+    font-size: 35px;
+}
+
+.luxury p{
+    margin-bottom: 75px;
+    font-size: 15px;
+}
+
+.luxury button{
+    background-color: white;
+    border: 2px solid transparent;
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: var(--very-dark-cyan);
+}
+
+.luxury button:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+@media (max-width: 750px){
+    body{
+      height: fit-content;
+      padding: 25px;
+    }
+    main{
+        width: 100%;
+    }
+
+    section{
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .sedans, .suv, .luxury{
+        width: 100%;
+    }
+}
