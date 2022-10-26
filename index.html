@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Form</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <form>
+    <label for="firstname"> First name </label>
+    <input type="text" id="firstname" placeholder="Firstname" required>
+    <label for="lastname"> Last name </label>
+    <input type="text" id="lastname" placeholder="Lastname" required>
+    <label for="phonenumber"> Phone number </label>
+    <input type="tel" id="phonenumber" placeholder="Phone Number" required>
+    <label for="email"> Email </label>
+    <input type="email" id="email" placeholder ="Email Address" required>
+    <label for="gender"> Gender </label>
+    <select id="gender">
+      <option style="visibility: hidden;">Select your gender</option>
+      <option>Male</option>
+      <option>Female</option>
+    </select>
+    <label for="dob"> Date of birth </label>
+    <input type="date" id="dob" required>
+    <label for="color"> Favorite color </label>
+    <input type="color" id="color" required>
+
+    <input type="submit" value="Register">
+
+    <p>Have an account? <a href="login.html">Login</a></p>
+  </form>
+
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="orange" defer></script>
+</body>
+
+</html>

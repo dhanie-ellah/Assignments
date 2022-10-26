@@ -1,0 +1,101 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html, body {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 45%, rgba(0,212,255,1) 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+a{
+  text-decoration: none;
+  color: green;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  border-radius: 25px;
+  padding: 15px 25px;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(25px);
+  box-shadow: inset 20px 20px 40px -6px rgba(255,255,255,0.15);
+}
+label{
+  margin-bottom: 10px;
+}
+input, select{
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.login{
+  width: 100%;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 8px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+.success{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.success .success-content{
+     background-color: white;
+     border-radius: 10px;
+     padding: 25px;
+}
+.success .content{
+     width: 100%;
+     border-radius: 50%;
+     overflow: hidden;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.success .content img{
+     width: 100%;
+}
+.success .success-content h1{
+     text-align: center;
+     color: #60f12d;
+     margin-bottom: 25px;
+}
+.success .success-content .btn{
+     display: flex;
+     justify-content: center;
+}
+.success .success-content button{
+     background-color: transparent;
+     border: .5px solid black;
+     color: black;
+     padding: 8px 12px;
+     outline: none;
+     text-align: center;
+     border-radius: 10px;
+}
+.success .success-content button:hover{
+     opacity: .5;
+}
+
+@media(max-width: 750px){
+  form{
+    width: 80%;
+  }
+}
