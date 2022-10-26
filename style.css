@@ -1,0 +1,427 @@
+:root{
+     --purple: #6e07f3;
+     --dark-blue: #141c3a;
+}
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "montserrat";
+}
+body{
+     background-color: white;
+}
+main{
+     scroll-snap-type: y mandatory;
+     overflow-y: scroll;
+     height: 100vh;
+}
+.page{
+     scroll-snap-align: start;
+     width: 90%;
+     margin: auto;
+}
+main header{
+     height: 100vh;
+}
+main nav{
+     width: 90%;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+     padding: 25px 0;
+}
+main nav .logo h1{
+     font-family: "lobster";
+     color: var(--purple);
+}
+main nav .links{
+     display: flex;
+     gap: 20px;
+     align-items: center;
+}
+main nav .links a{
+     text-decoration: none;
+     color: black;
+     font-weight: 600;
+}
+main nav .links a:hover{
+     color: var(--purple);
+}
+main nav .links a:last-child{
+     background-color: var(--purple);
+     color: white;
+     border-radius: 5px;
+     padding: 10px 15px;
+     border: 2px solid transparent;
+}
+main nav .links a:last-child:hover{
+     background-color: transparent;
+     border: 2px solid var(--purple);
+     color: black;
+}
+main nav i.menu,
+main nav i.close{
+     display: none;
+     font-size: 30px;
+     color: black;
+}
+main header .header{
+     text-align: center;
+     padding: 75px 0;
+}
+main header .header h1,
+main header .header p{
+     color: var(--dark-blue);
+     margin-bottom: 10px;
+}
+main header .header .image{
+     width: 25%;
+     margin: auto;
+}
+main header .header .image img{
+     width: 100%;
+}
+main #about{
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+main #about .about-content{
+     width: 45%;
+     margin: auto;
+}
+main #about .about-content .image{
+     width: 45%;
+     margin: auto;
+}
+main #about .about-content .image img{
+     width: 100%;
+}
+main #about .about-content h1{
+     color: var(--dark-blue);
+}
+main #services{
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+main #services .services-content{
+     display: flex;
+     background-color: rgba(225, 225, 225, 0.5);
+     padding: 50px 20px;
+     backdrop-filter: blur(5px);
+     border-radius: 10px;
+     justify-content: space-around;
+}
+main #services .services-content section{
+     width: 20%;
+     text-align: center;
+}
+main #services .services-content section i{
+     background-color: var(--purple);
+     color: white;
+     border-radius: 50%;
+     padding: 15px;
+     font-size: 45px;
+     margin-bottom: 25px;
+}
+main #services .services-content section h1{
+     margin-bottom: 15px;
+}
+main #services .services-content section p{
+     font-size: 14px;
+}
+main #projects{
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+main #projects .project-content{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+}
+main #projects .project-content .projects{
+     display: flex;
+     flex-wrap: wrap;
+     width: 90%;
+     margin: auto;
+     justify-content: space-between;
+}
+main #projects .project-content .projects .projects-outlined{
+     width: 300px;
+     height: 250px;
+}
+main #projects .project-content .projects .fylo{
+     background: url(./images/fylo.png) no-repeat center;
+     background-size: cover;
+}
+main #projects .project-content .projects .harvoxx{
+     background: url(./images/harvoxx.png) no-repeat center;
+     background-size: cover;
+}
+main #projects .project-content .projects .crappo{
+     background: url(./images/crappo.png) no-repeat center;
+     background-size: cover;
+}
+main #projects .project-content .projects .rating{
+     background: url(./images/rating.png) no-repeat center;
+     background-size: cover;
+}
+main #projects .project-content .projects .form{
+     background: url(./images/form.png) no-repeat center;
+     background-size: cover;
+}
+main #projects .project-content .projects .church{
+     background: url(./images/church.png) no-repeat center;
+     background-size: cover;
+}
+main #projects .project-content .projects .projects-outlined .text-container {
+     display: none;
+     width: 100%;
+     height: 100%;
+     background-color: rgb(0, 0, 0, 0.5);
+     backdrop-filter: blur(5px);
+     color: white;
+     padding: 25px 20px;
+     align-items: center;
+     justify-content: center;
+     border-radius: 15px;
+}
+
+main #projects .project-content .projects .projects-outlined:hover .text-container {
+     display: flex;
+}
+
+main #projects .project-content .projects .projects-outline .text-container h1 {
+     text-align: center;
+     margin-bottom: 15px;
+     font-size: 16px;
+     text-transform: uppercase;
+}
+
+main #projects .project-content .projects .projects-outline .text-container p {
+     font-size: 12px;
+     margin-bottom: 25px;
+}
+
+main #projects .project-content .projects .projects-outline .text-container p a {
+     color: var(--primary-color);
+}
+
+main #projects .project-content .projects .projects-outline .text-container .links {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+main #projects .text-container .text p a {
+     text-decoration: none;
+     color: var(--purple);
+}
+main #projects .text-container .text p a:hover {
+     text-decoration: none;
+     color: white;
+}
+main #projects .text-container a:hover i {
+     color: var(--purple);
+}
+main #projects .text-container a i {
+     font-size: 20px;
+     color: white;
+}
+main #projects .project-content p{
+     font-size: 12px;
+}
+main #projects .project-content p a {
+     cursor: pointer;
+     color: var(--dark-blue);
+     font-size: 12px;
+}
+
+/* CONTACT PAGE */
+.contact{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 80vh;
+     color: black;
+     width: 55%;
+     margin: auto;
+}
+.contact .contact-content {
+     display: flex;
+     align-items: center;
+}
+.contact .contact-content .contact-links {
+     width: 50%;
+     padding: 25px;
+}
+.contact-links .tel-wrapper,
+.contact-links .email-wrapper {
+     display: flex;
+     gap: 5px;
+     align-items: center;
+     margin-bottom: 15px;
+}
+
+.contact-links .tel-wrapper i,
+.contact-links .email-wrapper i {
+     font-size: 18px;
+     color: white;
+     background-color: black;
+     border-radius: 50%;
+     padding: 10px;
+}
+
+.contact-links .tel-wrapper a,
+.contact-links .email-wrapper a {
+     text-decoration: none;
+     color: black;
+     font-size: 15px;
+}
+
+.contact-links .social-media-icons {
+     display: flex;
+     gap: 15px;
+}
+
+.contact-links .social-media-icons a {
+     font-size: 30px;
+     color: black;
+}
+.contact-links .social-media-icons a:hover{
+     color: var(--purple);
+}
+
+form {
+     width: 50%;
+     padding: 25px;
+}
+form input,
+form textarea {
+     width: 100%;
+     background-color: transparent;
+     border: 1px solid black;
+     border-radius: 10px;
+     padding: 12px;
+     margin-bottom: 15px;
+     outline: none;
+     resize: none;
+     color: black;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+     color: black;
+}
+
+form input:focus,
+form textarea:focus {
+     caret-color: black;
+     color: black;
+}
+
+form input[type="submit"] {
+     width: 100px;
+     background-color: black;
+     color: white;
+     cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+     background-color: var(--primary-color);
+     color: black;
+}
+
+@media(max-width: 1000px){
+     main{
+          height: auto;
+     }
+     main nav{
+          z-index: 10;
+     }
+     main nav .links{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 90vh;
+          text-align: center;
+          background-color: white;
+          display: none;
+          align-items: center;
+          justify-content: center;
+          padding: 100px;
+          z-index: 5;
+     }
+     main nav .links a{
+          display: block;
+          margin-bottom: 25px;
+          font-size: 20px;
+     }
+  main nav i.menu{
+    display: block;
+  }
+     main nav i.close{
+          display: none;
+     }
+     main header{
+          height: auto;
+     }
+     main header .header{
+          padding: 50px 25px 25px;
+          margin-bottom: 45px;
+     }
+     main header .header h1{
+          font-size: 20px;
+     }
+     main #about{
+          height: auto;
+          margin-bottom: 50px;
+     }
+     main #about .about-content{
+          width: 90%;
+     }
+     main #about .about-content h1{
+          font-size: 20px;
+     }
+     main #services{
+          height: auto;
+     }
+     main #services .services-content{
+          flex-direction: column;
+          gap: 50px;
+     }
+     main #services .services-content section{
+          width: 100%;
+     }
+     main #projects{
+          height: auto;
+          margin-bottom: 45px;
+          margin: 45px 0;
+     }
+     main #projects .project-content .projects{
+          flex-direction: column;
+     }
+     .contact{
+          width: 90%;
+     }
+     .contact .contact-content {
+               flex-direction: column;
+          }
+          .contact .contact-content .contact-links {
+               width: 100%;
+          }
+          form {
+               width: 100%;
+          }
+}
